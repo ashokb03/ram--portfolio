@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+/* Header Section */
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background: black;
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100;
+    border-bottom: 1px white solid;
+}
+
+.logo{
+    position: relative;
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#menu-icon{
+    font-size: 3.5rem;
+    color: white;
+    display: none;
+    margin-top: 4%;
+}
+
+.menu, .menu-list{
+    display: flex;
+}
+
+.menu .list{
+    list-style: none;
+    position: relative;
+}
+
+.menu-list a:hover, .menu-list a.active{
+    color: #741AAC;
+}
+
+
+
+.menu-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
+}
+
+
+.header-button .btn{
+    color: white;
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #741AAC;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.header-button a{
+    text-decoration: none;
+}
+
+.header-button a:hover{
+    color: black;
+}
+
+.header-button .btn:hover{
+    background: white;
+    color: var(--color-white);
+}
+
+
+
+/* About Page */
+
+
+.abt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10Vw;
+    margin-left: 3%;
+}
+
+.abt-content{
+    margin-top: 9%;
+}
+
+.abt-content h3{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.abt-content h1{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+
+}
+
+.abt-content h2{
+    color:#741AAC;
+    margin-bottom: 3%;
+
+}
+
+.abt-content p{
+    color: white;
+    margin-bottom: 5%;
+}
+
+
+.abt-btn{
+    display: flex;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.abt-btn a{
+    text-decoration: none;
+}
+
+.abt a:hover{
+    color: black;
+}
+
+.abt-btn .btn{
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #741AAC;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.abt-btn .btn:hover{
+    background: white;
+    color:black;
+}
+
+.abt-btn .btn i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.abt-icons{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 5px;
+    gap: 32px;
+}
+
+.abt-icons a{
+    text-decoration: none;
+}
+
+
+.abt-icons i{
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px 3px #741AAC;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+
+.abt-icons .linkedin i:hover{
+    color:black;
+    background: blue; 
+}
+
+.abt-icons .github i:hover{
+    color:black;
+    background: gray; 
+}
+
+.abt-icons .email i:hover{
+    color:black;
+    background: red; 
+}
+
+.abt-icons .wtsapp i:hover{
+    color:black;
+    background: green; 
+}
+
+
+
+.abt-image{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 100vh;  /* ? */
+    width: 100%;
+}
+
+.abt-image img{
+    width: 400px;
+    height: 400px;
+    border-radius: 500px;
+    margin-top: 12%;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px 3px #741AAC;
+    transition: .5s ease;
+}
+
+.abt-image img:hover{
+    transform: scale(1.1);
+} 
+
+/* Skill Section */
+
+.ski h1{
+    color:white;
+    margin-top: 3%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ski h3{
+    color:white;
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.ski-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center; 
+    margin: 0 10%;
+}
+
+.ski-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.ski-box img{
+    height: 21vh;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.9;
+}
+
+.ski-box:hover img{
+    transform: scale(1.1);
+} 
+
+.ski-box h3{
+    color: white;
+    padding: 3%;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* .ski-box:hover h3{
+    transform: scale(1.1);
+}  */
+
+
+
+/* Work Section */
+
+.pro h1{
+    color:white;
+    margin-top: 5%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pro h3{
+    color:white;
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;  
+    gap:50px;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.pro-container .pro-box{
+    position: relative;
+    border-radius: 1rem;
+    border: 2px solid #741AAC;
+    overflow: hidden;
+    display: flex;
+}
+
+.pro-box img{
+    height: 35vh;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.pro-box:hover img{
+    transform: scale(1.1);
+} 
+
+.pro-box .pro-layer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #741AAC );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.pro-box:hover .pro-layer{
+    transform: translateY(0);
+}
+
+.pro-layer h4{
+    font-size: 2rem;
+    color: white;
+}
+
+.pro-layer p{
+    color: white;
+    font-size: 1rem;
+    margin: .3rem 0 1rem;
+}
+
+.pro-layer i{
+    font-size: 1.5rem;
+    color:white;
+}
+
+
+/* Contact Section */
+
+.call h1{
+    color:white;
+    margin-top: 8%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.call form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.call form .call-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.call form .call-box input, .call form textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    color:white;
+    background: black;
+    border-radius: 21px;
+    border: 2px solid #741AAC;
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.call form .btn{
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #741AAC;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.call form .btn:hover{
+    background: white;
+    color:black;
+}
+
+/* Footer Section */
+
+
+.fot{
+    position: relative;
+    bottom: 0;
+    margin-top: 5%;
+    border-top: 1px white solid;
+}
+
+.fot-icons{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 2%;
+}
+
+.fot-icons a{
+    text-decoration: none;
+}
+
+.fot-icons i{
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px 3px #741AAC;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.fot-icons .linkedin i:hover{
+    color:black;
+    background: blue; 
+}
+
+.fot-icons .github i:hover{
+    color:black;
+    background: gray; 
+}
+
+.fot-icons .email i:hover{
+    color:black;
+    background: red; 
+}
+
+.fot-icons .wtsapp i:hover{
+    color:black;
+    background: green; 
+}
+
+.fot ul{
+    margin: 2%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.fot ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* down arrow */
+
+.fa-regular{	
+    padding: 30px;			
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color : white;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+
+/* 
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding: 10rem 3%;
+    }
+
+    .ski{
+        padding: 7rem;
+    }
+
+    .pro{
+        padding: 7rem;
+    }
+
+    .call{
+        min-height: auto;
+    }
+
+    .fot{
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 768px) {
+    #menu-icon{
+        display: block;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg--color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .menu .active{
+        display: block;
+    }
+
+    .menu a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .header-button{
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg--color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .abt{
+        flex-direction: column;
+    }
+
+    .abt-content h3{
+        font-size: 2rem;
+    }
+
+    .abt-content h1{
+        font-size: 4rem;
+    }
+
+    .abt-image img{
+        width:90vw;
+        margin-top: 4rem;
+    }
+
+}
+
+
+
+ */
+
+
+
+
+
+
